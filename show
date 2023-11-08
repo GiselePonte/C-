@@ -1,0 +1,18 @@
+@model SP3065707MVCDB.Models.Pedido
+@{
+//interpolação de string (colocar uma prop dentro de uma string - não precisa concatenar)
+ViewData["Title"] = $"Pedido {Model.PedidoId}";
+}
+<h1>@ViewData["Title"]</h1>
+<p><b>EmpregadoId:</b> @Model.EmpregadoId</p>
+<p><b>Data do Pedido:</b> @Model.DataPedido</p>
+<p><b>Peso:</b> @Model.Peso</p>
+<p><b>Código da transpostadora:</b> @Model.CodTransportadora </p>
+<p><b>Pedido do ClienteId:</b> @Model.PedidoClienteId</p>
+
+<a href="/Pedido/Delete">
+<button type="button">Deletar</button>
+</a>
+<a href="/Pedido/Update">
+<button type="button">Atualizar</button>
+</a>
