@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Criar clientes";
+}
+
+<div class="text">
+    <h1>Cadastrar um novo cliente</h1>
+    <hr>
+</div>
+
+<form action="CreateResult" method="post">
+    <table>
+        <tr>
+            <td>ClienteId:</td>
+            <td><input type="text" name="clienteId" id="lienteId" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Endereco:</td>
+            <td><input type="text" name="endereco" id="ram" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Cidade:</td>
+            <td><input type="text" name="cidade" id="cidade" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Região:</td>
+            <td><input type="text" name="regiao" id="regiao" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>CodigoPostal:</td>
+            <td><input type="text" name="codigoPostal" id="codigoPostal" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Pais:</td>
+            <td><input type="text" name="pais" id="pais" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Telefone:</td>
+            <td><input type="text" name="telefone" id="telefone" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td> <button type="submit" class="btn btn-primary">Enviar</button></td>
+        </tr>
+
+    </table>
+</form>
+
+
